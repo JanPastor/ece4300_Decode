@@ -27,3 +27,4 @@ An `LW` instruction (`32'h8C240008`) was processed to verify:
 
 ## Simulation Results
 The timing diagram (`timing_diagram_DECODE.png`) illustrates that all control signals and register outputs transition exactly one clock cycle after the instruction arrives at the `if_id_instr` input, as dictated by the synchronous nature of the pipeline latch.
+![MIPS ID Stage Timing Diagram](timing_diagram_DECODE.png)
