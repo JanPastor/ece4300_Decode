@@ -10,7 +10,7 @@ This repository contains the Verilog implementation of the **Instruction Decode 
 * **ID/EX Latch (`idExLatch.v`)**: A pipeline register that synchronizes and passes all decoded data and control signals to the next stage
 
 ## Verification Methodology
-[cite_start]The functionality was verified using a custom testbench (`decode_tb.v`) targeting the following scenarios
+The functionality was verified using a custom testbench (`decode_tb.v`) targeting the following scenarios
 
 ### 1. Register Data Integrity (The "Coffee" Test)
 To verify that the **Register File** correctly stores and retrieves data, Register 1 was initialized with the hexadecimal constant `32'hC0FFEE00`. Subsequent instructions successfully read this value, confirming that the internal memory array is stable and the read-enable logic is functional.
